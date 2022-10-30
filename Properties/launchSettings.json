@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Student": {
+    "EntityFrameworkTest": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

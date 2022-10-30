@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Student.Controllers;
+namespace EntityFrameworkTest.Controllers;
 
 [Route("")]
 public class MainController{
