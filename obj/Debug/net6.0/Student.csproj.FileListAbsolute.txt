@@ -528,3 +528,5 @@
 /home/mn/Documents/Homework/Student/obj/Debug/net6.0/Student.pdb
 /home/mn/Documents/Homework/Student/obj/Debug/net6.0/Student.genruntimeconfig.cache
 /home/mn/Documents/Homework/Student/obj/Debug/net6.0/ref/Student.dll
+/home/mn/Documents/Homework/Student/bin/Debug/net6.0/Npgsql.dll
+/home/mn/Documents/Homework/Student/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -5,11 +5,11 @@ using System.Collections.Generic;
 namespace EntityFrameworkTest.Controllers;
 
 [ApiController]
-[Route("person")]
-public class PersonConroller : ControllerBase
+[Route("student")]
+public class StudentConroller : ControllerBase
 {
     private readonly DataContext _context;
-    public PersonConroller(DataContext context)
+    public StudentConroller(DataContext context)
     {
         _context = context;
     }

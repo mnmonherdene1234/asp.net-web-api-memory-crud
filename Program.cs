@@ -1,9 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using EntityFrameworkTest.Models;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
-builder.Services.AddDbContext<DataContext>(ops => ops.UseInMemoryDatabase("PersonList"));
+IConfigurationBuilder configurationbuilder = new ConfigurationBuilder().AddJsonFile("appsettings.json", false, true);
+IConfigurationRoot configuration = configurationbuilder.Build();
+builder.Services.AddDbContext<DataContext>(options => options.UseNpgsql(configuration.GetConnectionString("Postgres")));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
